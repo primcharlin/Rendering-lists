@@ -339,4 +339,146 @@ h1 {
     background: #006d6d;
 }
 
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 12px;
+    padding: 0;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    background: white;
+    color: #333;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.book-form {
+    padding: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.form-row label {
+    flex: 0 0 120px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+    background: white;
+    color: #333;
+}
+
+.form-row input:focus {
+    outline: none;
+    border-color: red;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+.btn-save {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: #4caf50;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-save:hover {
+    background: #45a049;
+    transform: translateY(-1px);
+}
+
+/* Book Selection Styles */
+.book.selected {
+    border: 3px solid teal !important;
+    background: #f0f8f8 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 128, 128, 0.3) !important;
+}
+
+.book.selected:hover {
+    transform: translateY(-6px);
+}
+
+/* Remove Button Styles */
+.remove-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.remove-btn:hover {
+    background: #ff3742;
+    transform: scale(1.1);
+}
+
 /* test */
